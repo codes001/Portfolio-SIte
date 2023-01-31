@@ -1445,6 +1445,10 @@ a.resume-btn:active {
     #contact {
         padding: 15px 10px 50px;
     }
+    form {
+        max-width: 100%;
+        padding: 2rem 1rem;
+    }
 }
 
 
