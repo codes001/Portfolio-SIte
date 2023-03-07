@@ -11,7 +11,7 @@
     <meta property="og:image:type" content="image/png" />
     <meta property="og:title" content="Prince Effiong Portfolio" />
     <meta property="og:type" content="website" />
-    <link rel="shortcut icon" href="img/logo-transparent-00009C.png">
+    <link rel="shortcut icon" href="img/myLogo.png">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
@@ -39,7 +39,7 @@
                         <i class="fa fa-2x fa-bars"></i>
                     </button>
                     <a class="navbar-brand page-scroll" href="#">
-                        <img src="img/logo-transparent-white-30pt.png" />Prince Effiong</a>
+                        <img src="img/myLogo.png" />Prince Effiong</a>
                 </div>
                 <div class="collapse navbar-collapse navbar-main-collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -434,9 +434,9 @@
                         <div class="email-icon"><i style="color: #0b4f6c;" class="fa fa-envelope wp6"></i></div>
                         <h2>Get In Touch!</h2>
                         <form name="contact" method="POST" data-netlify="true">
-                            <input type="hidden" name="form-name" value="contact">
-                            <input style="height: 50px;" type="text" placeholder="Enter your Name">
-                            <input style="height: 50px;" type="email" placeholder="Enter your Email">
+                            <input type="hidden" name="form-name" value="contact" required>
+                            <input style="height: 50px;" type="text" placeholder="Enter your Name" required>
+                            <input style="height: 50px;" type="email" placeholder="Enter your Email" required>
                             <textarea style="height:150px;" placeholder="Drop a Message"></textarea>
                             <input id="submit" type="submit" value="Submit">
                         </form>
@@ -501,11 +501,7 @@
         <script src="js/modernizr.js"></script>
         <script src="js/custom.js"></script>
         <script>
-        // $(function() {
-        //  $(".preload").fadeOut(2000, function() {
-        //      $(".everything").fadeIn(1000);
-        //  });
-        // });
+      
         </script>
         <script>
             let spinnerWrapper = document.querySelector('.spinner-wrapper');

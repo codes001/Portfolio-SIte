@@ -39,6 +39,7 @@ button:focus,
     display: flex;
     align-items: center;
     justify-content: center;
+    position:fixed;
   }
   
   .spinner {
@@ -59,7 +60,7 @@ button:focus,
     width: 100%;
     height: 100%;
     background-image:linear-gradient(90deg, #c59d5f 0%,#515151 100% );
-    animation: spin .5s infinite linear;
+    animation: spin 5s infinite linear;
   }
   
   .spinner:after {
