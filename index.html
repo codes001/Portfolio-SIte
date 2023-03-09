@@ -12,23 +12,20 @@
     <meta property="og:title" content="Prince Effiong Portfolio" />
     <meta property="og:type" content="website" />
     <link rel="shortcut icon" href="img/myLogo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css"
-        href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,900,900italic,700italic'>
-    <link rel="stylesheet" type="text/css" href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom" data-offset="100">
-    <div class="spinner-wrapper">
+    <!-- <div class="spinner-wrapper">
         <div class="spinner">
 
         </div>
-    </div>
+    </div> -->
     <div id="content">
         <!-- Navigation -->
         <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
@@ -36,10 +33,9 @@
                 <div class="navbar-header page-scroll">
                     <button type="button" class="navbar-toggle" data-toggle="collapse"
                         data-target=".navbar-main-collapse">
-                        <i class="fa fa-2x fa-bars"></i>
+                        <i class="fas fa-bars"></i>
                     </button>
-                    <a class="navbar-brand page-scroll" href="#">
-                        <img src="img/myLogo.png" />Prince Effiong</a>
+                    <a class="navbar-brand page-scroll" href="#" style="font-size:3rem; letter-spacing:5px;"> Prince Effiong</a>
                 </div>
                 <div class="collapse navbar-collapse navbar-main-collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -62,7 +58,6 @@
                     <h1 class="animated fadeInDown delay-05s">Hi, I'm Prince</strong>
                     </h1>
                     <p class="subtitle animated fadeInUp delay-05s">Frontend Web Developer, Data Entry Specialist </p>
-                    <a class="fa fa-angle-down page-scroll" href="#about"></a>
                 </div>
             </div>
         </section>
@@ -72,7 +67,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2 wp1">
-                            <h2 style="color:#fff;">About Me</h2>
+                            <h2 style="color:#fff; font-weight:600;">About Me</h2>
                             <img src="img/skills/dp.png"
                               id="prof-pic" />
                             <p style="color: #fff; text-align: justify;">
@@ -288,12 +283,7 @@
                             policies, standards and regulations in Nigeria, as well as enforcing compliance with
                             provisions of international agreements, protocols, conventions and treaties on the
                             environment to which Nigeria is a signatory.
-                            <br>
-                            NESREA has responsibility for the protection and development of the environment,
-                            biodiversity conservation and sustainable development of Nigeria’s natural resources in
-                            general and environmental technology including coordination, and liaison with, relevant
-                            stakeholders within and outside Nigeria on matters of enforcement of environmental
-                            standards, regulations, rules, laws, policies and guidelines.
+                           
                         </p>
                         <p class="visit"><a href="https://nesrea.netlify.app/" target="_blank" id="visit-btn">Visit
                                 Site</a> or <a href="https://github.com/codes001/NESREA.git" target="_blank"
@@ -433,16 +423,17 @@
                     <div class="col-md-10 col-md-offset-1 text-center">
                         <div class="email-icon"><i style="color: #0b4f6c;" class="fa fa-envelope wp6"></i></div>
                         <h2>Get In Touch!</h2>
-                        <form name="contact" method="POST" data-netlify="true">
+                        <form name="contact" method="POST" data-netlify="true" class="form" id="form">
                             <input type="hidden" name="form-name" value="contact" required>
-                            <input style="height: 50px;" type="text" placeholder="Enter your Name" required>
-                            <input style="height: 50px;" type="email" placeholder="Enter your Email" required>
+                      <input type="text" id="username" placeholder="Enter name" />
+
+                            <input type="email" placeholder="Enter your Email" required>
                             <textarea style="height:150px;" placeholder="Drop a Message"></textarea>
                             <input id="submit" type="submit" value="Submit">
                         </form>
                     </div>
                 </div>
-            </div>
+             
         </section>
         <!-- /Section: Contact -->
         <!-- Footer -->
@@ -454,21 +445,21 @@
                         <ul class="list-inline social-buttons animated fadeIn">
                             <!-- Whatsapp Button -->
                             <li><a id="whatsapp" href="https://wa.link/blmxwp" target="_blank"><i
-                                        class="fa fa-whatsapp"></i></a></li>
+                                        class="fab fa-whatsapp"></i></a></li>
                             <!-- Twitter Button -->
                             <li><a id="twitter" href="https://twitter.com/_effiong_prince" target="_blank"><i
-                                        class="fa fa-twitter"></i></a></li>
+                                        class="fab fa-twitter"></i></a></li>
                             <!-- Instagram Button -->
                             <li><a id="instagram" href="https://instagram.com/codes001" target="_blank"><i
-                                        class="fa fa-instagram"></i></a></li>
+                                        class="fab fa-instagram"></i></a></li>
 
                             <!-- GitHub Button -->
                             <li><a id="github" href="https://github.com/codes001" target="_blank"><i
-                                        class="fa fa-github"></i></a></li>
+                                        class="fab fa-github"></i></a></li>
                             <!-- LinkedIn Button -->
                             <li><a id="linkedin"
                                     href="https://www.linkedin.com/in/prince-effiong-50686722b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BWWNKVffcQISH5S5Ig1v5hw%3D%3D"
-                                    target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                    target="_blank"><i class="fab fa-linkedin"></i></a></li>
                             <li><a id="mail"
                                     href="mailto:princeokwong19@gmail.com"
                                     target="_blank"><i class="fa fa-envelope"></i></a></li>
@@ -481,7 +472,7 @@
                             <p id="to-top-copy">Back to Top!</p>
                         </div>
                         <div class="copyright">
-                            <p><i class="fa fa-copyright"></i> Prince Effiong 2023</p>
+                            <p>&copy;Prince Effiong 2023</p>
                         </div>
                     </div>
                 </div>

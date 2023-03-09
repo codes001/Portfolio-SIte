@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+        font-family: 'Fira Sans', sans-serif !important;
 }
 
 html {
@@ -9,7 +12,9 @@ html {
     height: 100%;
     margin: 0px auto;
 }
-
+h1, h2, h3, h4, h5, h6, .nav li a{
+    font-weight: 600 !important;
+}
 body {
     width: 100%;
     height: 100%;
@@ -285,14 +290,15 @@ a.active {
     margin-bottom: 0;
     border-color: transparent;
     background-color: #0b4f6c;
-    font-family: "Lato", sans-serif;
     text-transform: uppercase;
 }
 
-.navbar-custom .navbar-brand {
-    font-weight: 500;
+.navbar-custom .navbar-brand, .copyright p{
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-family: 'Pacifico', sans-serif !important;
 }
-
 .navbar-custom .navbar-brand:focus {
     outline: 0;
 }
@@ -324,7 +330,8 @@ a.active {
 
 .navbar-custom a {
     color: #FFF;
-    font-weight: 400;
+    font-weight: 600;
+    
 }
 
 .navbar-custom a:hover {
@@ -398,7 +405,7 @@ a.active {
     }
 
     .navbar-custom.top-nav-collapse {
-        padding: 0;
+        padding: 10px;
         background: #0b4f6c;
     }
 }
@@ -465,7 +472,7 @@ a.active {
 #intro h1 {
     color: #FFF;
     font-size: 90px;
-    font-weight: 300;
+    font-weight: 600;
     letter-spacing: 3px;
 }
 
@@ -476,7 +483,7 @@ a.active {
 
 .intro-content {
     position: absolute;
-    padding: 20% 0 5% 0;
+    padding: 20% 0 2% 0;
     left: 0;
     right: 0;
     z-index: 0;
@@ -486,6 +493,7 @@ a.active {
     .intro-content {
         padding: 25% 0 5% 0;
     }
+    .intro h1 {padding:0 2%;} 
 }
 
 @media screen and (max-width: 768px) {
@@ -1166,10 +1174,12 @@ form input, form textarea {
     padding:1.3rem 1.5rem;
     border-radius: 5px;
     border:0;
-    box-shadow: 1px 1px 2px #ccc;
+    height: 60px;
+    box-shadow: 1px 1px 5px #ccc;
     resize: none;
     font-weight:bolder;
 }
+
 #submit {
     background: #0b4f6c;
     padding: 1.7rem 0;
@@ -1179,6 +1189,7 @@ form input, form textarea {
     font-family:inherit;
     text-transform: uppercase;
 }
+#submit:hover, #submit:focus{background-color:#000; color: #0b4f6c;}
 /* ======= RESUME ======= */
 
 #resume {
@@ -1543,12 +1554,12 @@ ul.social-buttons li a:active {
 
 .copyright {
     font-weight: 300;
-    color: #aaa;
+    color: #fff;
 }
 
 .copyright p {
-    font-family: "Lato", sans-serif;
-    font-size: 14px;
+    font-size: 2rem;
+    letter-spacing:2px;
 }
 
 @media screen and (max-width: 480px) {
